@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporte_automotores_vencido" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="118dcc32-0e91-425d-a7c3-7ae3d3e3a9fd">
+	<property name="ireport.zoom" value="1.1000000000000019"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="IMGCABEZA" class="java.io.InputStream"/>
+	<parameter name="CUENTA" class="java.lang.String"/>
+	<parameter name="TITULAR" class="java.lang.String"/>
+	<parameter name="DOMICILIO" class="java.lang.String"/>
+	<parameter name="TIJERAS" class="java.io.InputStream"/>
+	<parameter name="COMPROBANTE" class="java.lang.String"/>
+	<parameter name="VENCIMIENTO" class="java.lang.String"/>
+	<parameter name="IMPORTETOTAL" class="java.lang.String"/>
+	<parameter name="FECHAEMISION" class="java.lang.String"/>
+	<parameter name="CODIGOBARRASCOMPLETO" class="java.lang.String"/>
+	<parameter name="DATA" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<defaultValueExpression><![CDATA[$P{REPORT_DATA_SOURCE}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORTEUP" class="java.io.InputStream"/>
+	<parameter name="REPORTEDOWN" class="java.io.InputStream"/>
+	<parameter name="MARCA" class="java.lang.String"/>
+	<parameter name="MODELO" class="java.lang.String"/>
+	<parameter name="CILINDRADA" class="java.lang.String"/>
+	<parameter name="DATA2" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<defaultValueExpression><![CDATA[$P{REPORT_DATA_SOURCE}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SALTODEPAGINA" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[$P{SALTODEPAGINA} == true]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CODIGOBARRASCHICO" class="java.lang.String"/>
+	<field name="tasa" class="java.lang.String"/>
+	<field name="fechaVencimiento" class="java.util.Date"/>
+	<field name="recargo" class="java.lang.Float"/>
+	<field name="capital" class="java.lang.Float"/>
+	<field name="multa" class="java.lang.Float"/>
+	<field name="total" class="java.lang.Float"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="51">
+			<image isUsingCache="true">
+				<reportElement x="2" y="0" width="553" height="51" uuid="d9d2c370-c0fe-462c-87ae-af5b693be2ce"/>
+				<imageExpression><![CDATA[$P{IMGCABEZA}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="123">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="123" uuid="f14f56b3-c6a3-4e74-a1df-dace124d5162"/>
+				<subreportParameter name="VENCIMIENTO">
+					<subreportParameterExpression><![CDATA[$P{VENCIMIENTO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="MARCA">
+					<subreportParameterExpression><![CDATA[$P{MARCA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORTEDOWN">
+					<subreportParameterExpression><![CDATA[$P{REPORTEDOWN}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CILINDRADA">
+					<subreportParameterExpression><![CDATA[$P{CILINDRADA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CODIGOBARRASCOMPLETO">
+					<subreportParameterExpression><![CDATA[$P{CODIGOBARRASCOMPLETO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DOMICILIO">
+					<subreportParameterExpression><![CDATA[$P{DOMICILIO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CUENTA">
+					<subreportParameterExpression><![CDATA[$P{CUENTA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="SALTODEPAGINA">
+					<subreportParameterExpression><![CDATA[$P{SALTODEPAGINA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORTEUP">
+					<subreportParameterExpression><![CDATA[$P{REPORTEUP}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="TIJERAS">
+					<subreportParameterExpression><![CDATA[$P{TIJERAS}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IMPORTETOTAL">
+					<subreportParameterExpression><![CDATA[$P{IMPORTETOTAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="TITULAR">
+					<subreportParameterExpression><![CDATA[$P{TITULAR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="MODELO">
+					<subreportParameterExpression><![CDATA[$P{MODELO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IMGCABEZA">
+					<subreportParameterExpression><![CDATA[$P{IMGCABEZA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CODIGOBARRASCHICO">
+					<subreportParameterExpression><![CDATA[$P{CODIGOBARRASCHICO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="FECHAEMISION">
+					<subreportParameterExpression><![CDATA[$P{FECHAEMISION}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="COMPROBANTE">
+					<subreportParameterExpression><![CDATA[$P{COMPROBANTE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA">
+					<subreportParameterExpression><![CDATA[$P{DATA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{DATA}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{REPORTEUP}]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="555" y="0" width="20" height="123" forecolor="#CCCCCC" uuid="ccd51232-ace4-429d-8838-c7a5006edebe"/>
+				<textElement rotation="Left"/>
+				<textFieldExpression><![CDATA["PARA CONTRIBUYENTE"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<break>
+				<reportElement x="0" y="10" width="100" height="1" uuid="cf970881-cbe4-4dff-a444-9c9409115c2d">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<printWhenExpression><![CDATA[$P{SALTODEPAGINA} == true]]></printWhenExpression>
+				</reportElement>
+			</break>
+		</band>
+		<band height="162">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="162" uuid="02a09dcc-7da2-4867-9918-be088ecdd761"/>
+				<subreportParameter name="VENCIMIENTO">
+					<subreportParameterExpression><![CDATA[$P{VENCIMIENTO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="MARCA">
+					<subreportParameterExpression><![CDATA[$P{MARCA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORTEDOWN">
+					<subreportParameterExpression><![CDATA[$P{REPORTEDOWN}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CILINDRADA">
+					<subreportParameterExpression><![CDATA[$P{CILINDRADA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CODIGOBARRASCOMPLETO">
+					<subreportParameterExpression><![CDATA[$P{CODIGOBARRASCOMPLETO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DOMICILIO">
+					<subreportParameterExpression><![CDATA[$P{DOMICILIO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CUENTA">
+					<subreportParameterExpression><![CDATA[$P{CUENTA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORTEUP">
+					<subreportParameterExpression><![CDATA[$P{REPORTEUP}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="TIJERAS">
+					<subreportParameterExpression><![CDATA[$P{TIJERAS}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IMPORTETOTAL">
+					<subreportParameterExpression><![CDATA[$P{IMPORTETOTAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="TITULAR">
+					<subreportParameterExpression><![CDATA[$P{TITULAR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="MODELO">
+					<subreportParameterExpression><![CDATA[$P{MODELO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="IMGCABEZA">
+					<subreportParameterExpression><![CDATA[$P{IMGCABEZA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CODIGOBARRASCHICO">
+					<subreportParameterExpression><![CDATA[$P{CODIGOBARRASCHICO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="FECHAEMISION">
+					<subreportParameterExpression><![CDATA[$P{FECHAEMISION}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="COMPROBANTE">
+					<subreportParameterExpression><![CDATA[$P{COMPROBANTE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA">
+					<subreportParameterExpression><![CDATA[$P{DATA}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{DATA2}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{REPORTEDOWN}]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="555" y="0" width="20" height="162" forecolor="#CCCCCC" uuid="b3746233-7583-4058-86d1-83145d288d02"/>
+				<textElement rotation="Left"/>
+				<textFieldExpression><![CDATA["PARA OFICINA RECAUDADORA"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

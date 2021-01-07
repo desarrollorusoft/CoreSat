@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporte_natatorios" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="118dcc32-0e91-425d-a7c3-7ae3d3e3a9fd">
+	<property name="ireport.zoom" value="1.652892561983471"/>
+	<property name="ireport.x" value="302"/>
+	<property name="ireport.y" value="1050"/>
+	<parameter name="NOMBREAPELLIDO" class="java.lang.String"/>
+	<parameter name="NROSOCIO" class="java.lang.String"/>
+	<parameter name="FECHAEMISION" class="java.lang.String"/>
+	<parameter name="IMPORTETOTAL" class="java.lang.String"/>
+	<parameter name="COMPROBANTE" class="java.lang.String"/>
+	<parameter name="VENCIMIENTO" class="java.lang.String"/>
+	<parameter name="CODIGOBARRASCOMPLETO" class="java.lang.String"/>
+	<parameter name="IMGCABEZA" class="java.io.InputStream"/>
+	<parameter name="IMGTIJERA" class="java.io.InputStream"/>
+	<parameter name="IDUNICO" class="java.lang.String"/>
+	<parameter name="DNI" class="java.lang.String"/>
+	<parameter name="CODIGOBARRASCORTO" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802">
+			<staticText>
+				<reportElement x="1" y="664" width="184" height="14" uuid="0566083d-c22f-4f48-9634-086833c69b82"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTABLECIMIENTO MUNICIPAL]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="59" y="76" width="216" height="105" uuid="7851df3b-5593-46e6-82da-ba0e6fb6b829"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="275" y="76" width="211" height="12" backcolor="#CCCCCC" uuid="9e8fd3cf-39c3-4314-9700-c2c48035947b"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="275" y="76" width="211" height="105" uuid="1ec0c824-1600-4125-b7c1-f2548eb27453"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="59" y="76" width="216" height="16" uuid="839ec11c-084c-4c20-9d29-a4a1a720ecbb"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="59" y="140" width="216" height="13" uuid="f4212e6a-eec8-4a5d-a365-00c841563581"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="59" y="90" width="216" height="12" backcolor="#CCCCCC" uuid="0504e295-b179-4001-9ef6-a8ff1c5658e0"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="59" y="90" width="112" height="50" uuid="2695aaca-3da1-41c0-bfc7-d3b76bab64f3"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="59" y="153" width="216" height="12" backcolor="#CCCCCC" uuid="a8cd1e37-d828-4d59-b1ba-e5c6a4684882"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="171" y="90" width="104" height="50" uuid="d48a741c-ce5c-4d52-991f-76a0f981452f"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="59" y="153" width="112" height="28" uuid="d9b07e4b-c124-4555-b608-540537f05ae1"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" mode="Transparent" x="171" y="153" width="104" height="28" uuid="49bb8d61-c7f9-4ade-9e2c-b1d47cbecd2a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="90" width="112" height="12" uuid="307b2dea-0b1a-41a3-90b3-bf8da8835080"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellido y Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="153" width="112" height="12" uuid="0358863c-42d4-4086-aff3-e12db1e2ba59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Desde]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="153" width="103" height="12" uuid="0b4a9dc2-49ed-4a78-9146-46e615af80f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Hasta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="90" width="104" height="12" uuid="b8b4c490-d9eb-4728-90f7-c5d233e1dc07"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro. de Socio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="140" width="216" height="13" uuid="d8fafec6-84e4-4188-a14f-3768f2e2c03b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REVISACIÓN MÉDICA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="76" width="217" height="14" uuid="83d8c638-8252-43f1-9794-897ba8337e66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATOS SOCIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="76" width="211" height="12" uuid="95e8e776-059e-4145-aa8f-d561230504ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma Médico]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="275" y="168" width="105" height="13" backcolor="#CCCCCC" uuid="e46b7156-20ae-448b-940c-08eaf8754b0e"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="275" y="155" width="105" height="13" backcolor="#CCCCCC" uuid="e013432f-5ba1-4947-a366-b065e95dbcc2"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="275" y="140" width="105" height="15" backcolor="#CCCCCC" uuid="b60c9a63-077d-47f9-8762-82ebaf2f754a"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="275" y="140" width="105" height="13" uuid="a6729fa5-29cb-459e-b11b-0ccfccc309ab"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="275" y="153" width="105" height="15" uuid="b2709dc3-4f8a-41f7-ad8b-39ccbf86f22a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="275" y="168" width="105" height="13" uuid="5ba2044a-10cd-4e08-8882-c4fd0f352377"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="380" y="153" width="106" height="15" uuid="28c16e9b-353c-4969-8f5b-c2feb58e1fa4"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="380" y="140" width="106" height="13" uuid="cf67e9d6-4ae8-4111-900a-78445e8ab513"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="380" y="168" width="106" height="13" uuid="b04a1856-589d-401e-abf8-3d2e939dfa71"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="275" y="140" width="105" height="13" uuid="b7ed9c7c-329e-4dce-b833-d4210dee1a2c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<text><![CDATA[Importe Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="153" width="105" height="15" uuid="9005d73d-d887-44fe-8eec-17a7a1079cb0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<text><![CDATA[Nro. Comprobante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="168" width="105" height="13" uuid="df71f63b-50e8-4a1e-a3cd-cd2169a6e045"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<text><![CDATA[Fecha de Vto.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="112" width="112" height="16" uuid="dd603b57-b624-48de-b2cc-f03bb1e01189"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOMBREAPELLIDO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="104" width="104" height="16" uuid="ea365bf5-dde4-4856-a7c2-045bf63958e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NROSOCIO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="140" width="106" height="13" uuid="c9d88531-e3fe-4333-a63f-b17e5cbf5449"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IMPORTETOTAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="168" width="106" height="13" uuid="e3deb9b3-0e9b-4835-819b-5ee544817ee7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{VENCIMIENTO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="153" width="106" height="15" uuid="3e4ba7da-d9a0-43bf-bbe9-7ecfed7d012d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{COMPROBANTE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="637" width="553" height="21" uuid="df2c6ff2-a6ef-4b12-97ae-babde222fdcb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brandon" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Para su mayor comodidad, usted puede abonar en:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="664" width="181" height="14" uuid="047d88a0-f1ff-4cac-aff2-471a9b44586c"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAGO FACIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="45" width="427" height="10" uuid="51ad6475-7daa-4a9b-a9a8-851422a41184"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MUNICIPALIDAD DE VICENTE LÓPEZ
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="54" width="427" height="10" uuid="4d8b65a2-e869-4d40-9df6-39f23ae0a394"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brandon" size="7" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[SECRETARIA DE DEPORTES - SERVICIO MÉDICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="63" width="223" height="10" uuid="734d4a72-97bd-43fa-ad1a-34f933c7f262"/>
+				<textElement textAlignment="Right">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de Emisión :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="282" y="63" width="204" height="10" uuid="b2787896-e6a6-4f45-8af7-76f9718bc373"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FECHAEMISION}]]></textFieldExpression>
+			</textField>
+			<image isUsingCache="true">
+				<reportElement x="1" y="1" width="553" height="40" uuid="2520692a-127b-426b-844a-38b234ab9a58"/>
+				<imageExpression><![CDATA[$P{IMGCABEZA}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="1" y="275" width="553" height="1" uuid="8b245b7c-704e-477a-8e2a-62a7f1b8ceef"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<image isUsingCache="true">
+				<reportElement x="-8" y="260" width="40" height="16" uuid="10b23dab-b62e-4a4e-8d33-4d06f9219cbd"/>
+				<imageExpression><![CDATA[$P{IMGTIJERA}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="1" y="249" width="277" height="10" uuid="3431e059-bf40-4f73-8fe7-13b98339e9d3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8"/>
+				</textElement>
+				<text><![CDATA[Comprobante obtenido desde www.vicentelopez.gob.ar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="249" width="277" height="10" uuid="5668bc1c-82c8-4399-bae0-a76b0cfbc26c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[Este recibo sellado es válido como comprobante de pago]]></text>
+			</staticText>
+			<image isUsingCache="true">
+				<reportElement x="-8" y="528" width="40" height="16" uuid="5064168d-ce97-4f3d-bf87-8d85abb48d72"/>
+				<imageExpression><![CDATA[$P{IMGTIJERA}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="1" y="544" width="553" height="1" uuid="81965d61-315c-41c5-9ec4-5733d35606f9"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="518" width="277" height="10" uuid="7af817ef-a45e-4288-9e27-c4e3221663d7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8"/>
+				</textElement>
+				<text><![CDATA[Comprobante obtenido desde www.vicentelopez.gob.ar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="518" width="277" height="10" uuid="d894b316-1ac6-4540-9b23-f209ab26007d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[Este recibo sellado es válido como comprobante de pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="677" width="184" height="14" uuid="557a625b-8b87-4014-b3fe-5d3edf1d75f9"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Av. Maipú 2609 - 4711-2800 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="723" width="184" height="12" uuid="686567f1-b866-47d9-8e80-8454c4e4c5cc"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación Florida Central]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="723" width="184" height="12" uuid="32a9c952-bc6c-4a5e-b06e-25aa43a60a50"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación La loma de Roca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="694" width="181" height="14" uuid="0c3bbdfd-21fd-4c62-8f43-0cb0d1e74ad7"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RAPIPAGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="734" width="184" height="13" uuid="d5402aa6-c908-4a5e-a301-eaa13e63453d"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vergara 2382]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="706" width="181" height="14" uuid="98b46a77-d67e-4584-8d53-811d97b7095c"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Todos los agentes autorizados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="734" width="183" height="13" uuid="830e306a-fb96-4631-891f-8c471e9ceb4f"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Uzal 3620 – Olivos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="677" width="181" height="14" uuid="1d05e612-0302-4906-b343-f740c2892c35"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Todos los agentes autorizados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="694" width="183" height="14" uuid="0502915b-d911-4164-8596-16a7fbcd0318"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación Carapachay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="761" width="185" height="14" uuid="b4555c6f-4576-4bd2-ab2b-963e4f43fe9f"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Anchorena 725]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="706" width="183" height="14" uuid="fdf13d71-2251-4732-86ec-c5db4be8b1d6"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Independencia y Ascasubi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="734" width="181" height="13" uuid="ca548f73-4894-4d3b-b127-7355caa1b2b4"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Av. San Martín 4106]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="706" width="184" height="14" uuid="d84778c8-5c54-46f0-8dfc-efa87ebd13de"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Todos los agentes autorizados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="677" width="184" height="14" uuid="f35c925f-8d79-49ec-924a-fc55fc96a7d4"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Av. Maipú 820 y todas sus Sucursales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="664" width="184" height="14" uuid="cef23639-db55-4b34-8766-a405b335d299"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BANCO ITAÚ - BUEN AYRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="749" width="185" height="13" uuid="f19320ed-ea9c-4f9d-9b75-46a50a4deb31"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación La Lucila]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="723" width="181" height="12" uuid="c272695e-0b14-42eb-9ab7-0b4de3db836e"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación Florida Oeste]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="694" width="184" height="14" uuid="376b714d-f70e-46c9-bd3a-9e38e5e79cbc"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BAPRO PAGOS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="283" y="338" width="204" height="10" uuid="8387cf06-f6e4-4760-a4e9-fbe5015e1c95"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FECHAEMISION}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="320" width="427" height="10" uuid="63e4d06e-2d6a-44e9-a046-8d6ee37db022"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MUNICIPALIDAD DE VICENTE LÓPEZ
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="338" width="223" height="10" uuid="4cac07dd-6f74-4d76-aab2-1cfe43e27e7d"/>
+				<textElement textAlignment="Right">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de Emisión :]]></text>
+			</staticText>
+			<image isUsingCache="true">
+				<reportElement x="1" y="278" width="553" height="40" uuid="3af0ee06-9b6c-48ec-ade0-d840c0cff7cf"/>
+				<imageExpression><![CDATA[$P{IMGCABEZA}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="60" y="329" width="427" height="10" uuid="25482afb-7fca-4a82-a507-eca933844160"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brandon" size="7" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[SECRETARIA DE DEPORTES - SERVICIO MÉDICO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="60" y="351" width="216" height="105" uuid="de4ce5b0-4686-4b36-a554-bc73b15cb08d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="276" y="351" width="211" height="12" backcolor="#CCCCCC" uuid="e1ea9816-7be9-4fc4-800d-331de8f34ac2"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="276" y="351" width="211" height="105" uuid="74001cb4-f1d9-472b-be45-19d3fcf5c664"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="60" y="351" width="216" height="16" uuid="4b683e46-f55f-4793-909b-113d8c08f92a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="60" y="415" width="216" height="13" uuid="9d8e99ff-4af3-4a38-929d-187dfb95636e"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="60" y="365" width="216" height="12" backcolor="#CCCCCC" uuid="b2726040-f76f-44a2-9053-137525f41ff6"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="60" y="365" width="112" height="50" uuid="8bcdb755-e206-45e7-84b2-1de08de0b4ec"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="60" y="429" width="216" height="12" backcolor="#CCCCCC" uuid="cd764da4-6f9d-44a4-a6b9-9623e864af7a"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="172" y="365" width="104" height="50" uuid="e455062e-d663-4478-ac66-a3137b8c5280"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="60" y="428" width="112" height="28" uuid="afe1964d-bbae-46b9-bdf6-5d0f08d9c593"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" mode="Transparent" x="172" y="428" width="104" height="28" uuid="ae54c314-40d6-46a2-9b78-604f1931c7d5"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="60" y="365" width="112" height="12" uuid="a3b35bed-3c03-4c2a-b871-522b1a714194"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellido y Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="428" width="112" height="12" uuid="dab3d33f-56ec-4e72-8321-3a1cedf8f6f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Desde]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="428" width="103" height="12" uuid="1875cd6b-8e1d-4eec-bc5e-641361cd5f5b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Hasta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="365" width="104" height="12" uuid="554c5854-636d-418a-9b13-9667573b167a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro. de Socio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="415" width="216" height="13" uuid="08a52799-824b-4f4a-bdc2-2703a6b7bd22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REVISACIÓN MÉDICA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="351" width="217" height="14" uuid="489efad2-2c55-481f-8e81-54ebc8859d25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATOS SOCIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="351" width="211" height="12" uuid="e01e126f-02a7-4f0c-a136-ebcd183ecd9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma Médico]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="276" y="443" width="105" height="13" backcolor="#CCCCCC" uuid="e53f895f-bd8c-45b4-b5c0-39dc23f5da49"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="276" y="430" width="105" height="13" backcolor="#CCCCCC" uuid="97a2aa27-4043-44fe-a688-eb2d1bfba7b3"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="276" y="415" width="105" height="15" backcolor="#CCCCCC" uuid="60700e90-68cf-4065-b08c-f7db46dc339f"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="276" y="415" width="105" height="13" uuid="d22b56f3-421d-4fbb-8c31-d334d787dba4"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="276" y="428" width="105" height="15" uuid="a25b94d7-74a2-4dab-afab-779c87148e71"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="276" y="443" width="105" height="13" uuid="9fde5ad7-711b-4ee6-a2b6-49718a3e8a28"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="381" y="428" width="106" height="15" uuid="df3f9221-b7c6-49e5-b1b0-558ca2df90ce"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="381" y="415" width="106" height="13" uuid="2a167065-b25b-46e1-9699-72a14b438d53"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="381" y="443" width="106" height="13" uuid="22fa2c32-6997-4c8f-a557-21512bfac563"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="276" y="415" width="105" height="13" uuid="964e47e1-a127-45ad-a059-4f48724c7134"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<text><![CDATA[Importe Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="428" width="105" height="15" uuid="4d21d39c-d294-4f86-a30a-a5a459379242"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<text><![CDATA[Nro. Comprobante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="443" width="105" height="13" uuid="94dd4506-cc24-4b98-aa3a-ce4cf5969ddd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<text><![CDATA[Fecha de Vto.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="387" width="112" height="16" uuid="b9105341-5437-47ea-b204-0a801490d263"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOMBREAPELLIDO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="379" width="104" height="16" uuid="b4450409-8eee-4310-9499-ec0bd7bfbe3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NROSOCIO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="415" width="106" height="13" uuid="770e5ad6-4b17-4dec-81b5-877d62abb891"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IMPORTETOTAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="443" width="106" height="13" uuid="3fc1e92c-d1a9-40f7-b286-75f487f29abc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{VENCIMIENTO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="428" width="106" height="15" uuid="7aad0fbb-6e83-4081-a367-0c5af3153e5e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{COMPROBANTE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="397" width="104" height="16" uuid="40483ca1-1419-422a-9f6c-964839bcd8f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IDUNICO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="122" width="104" height="16" uuid="788fe59b-7c8d-421f-9ffc-6df833960801"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IDUNICO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="574" width="202" height="14" uuid="ee43df27-7be4-45e9-849c-cf1590fd0b16"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATOS SOCIO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="60" y="588" width="202" height="12" backcolor="#CCCCCC" uuid="83f18b49-56a2-4f59-8d67-9c185cec3660"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="60" y="616" width="104" height="12" backcolor="#CCCCCC" uuid="002283b5-7f0a-4324-b2f2-4c9f30eccd5e"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="60" y="588" width="104" height="28" uuid="af5daeec-ffc3-42b3-9d11-c4f49005abba"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="164" y="588" width="98" height="28" uuid="39c66428-6eb1-4841-a03c-9dd8f53e7518"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="60" y="616" width="202" height="12" uuid="597a93d0-19cc-4017-9cfd-ed432e1071f6"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="60" y="588" width="104" height="12" uuid="1fa2b9c9-0c54-43f7-bc2c-d5ac2b8ceffe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellido y Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="588" width="98" height="12" uuid="0cb24ad4-4e10-47a8-bb71-737ad2ef0e73"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro. de DNI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="616" width="104" height="12" uuid="b105b4dc-5284-4dac-b7d9-df43f8141caf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro. de Socio]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="600" width="104" height="16" uuid="b9e577c1-1420-4952-a375-285f816b168d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOMBREAPELLIDO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="616" width="98" height="12" uuid="cbcc2c02-bbd0-4622-98d6-f6f33a3e22af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NROSOCIO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="600" width="98" height="16" uuid="f148008b-5dee-483c-b1de-79e0f80d4db7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DNI}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="553" width="204" height="21" uuid="99d813e2-7e4b-4d26-8570-3e2302fa9325"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brandon" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Control Secretaria de Deportes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="285" y="616" width="104" height="12" backcolor="#CCCCCC" uuid="26006aa1-97e4-4279-8bc8-63b30f690034"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="389" y="616" width="98" height="12" uuid="062c9268-2ce5-4c08-9be4-db29f0dc184b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NROSOCIO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="285" y="616" width="104" height="12" uuid="bab7f12c-f951-4b70-a8b5-a3d6ed978337"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro. de Socio]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="285" y="616" width="202" height="12" uuid="679a91a3-efef-49ee-a0df-b7e6de7bc2bd"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="284" y="553" width="204" height="21" uuid="d7142bdc-ed00-4173-a89e-2eb3e8b47192"/>
+				<textElement textAlignment="Center">
+					<font fontName="Brandon" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Control Secretaria de Deportes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="574" width="202" height="14" uuid="8ab5e82c-8410-4be7-83ab-a90f786611d7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATOS SOCIO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="285" y="588" width="202" height="12" backcolor="#CCCCCC" uuid="d83d0b59-3c8d-4952-b8ec-e7cb76a28a40"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="285" y="588" width="104" height="28" uuid="53aefb9c-161e-4780-8eca-d54c0c1f1acc"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="389" y="588" width="98" height="28" uuid="0dd4cad1-890d-4c87-b552-c5284a49eef2"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="389" y="588" width="98" height="12" uuid="d08876ca-2fbb-4529-abb9-f7755b13581c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro. de DNI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="588" width="104" height="12" uuid="6a07546c-b0b8-4f4f-bb24-dee097afac82"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellido y Nombre]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="389" y="600" width="98" height="16" uuid="3907cb84-ed7d-4b99-9165-5e937af68aef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DNI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="600" width="104" height="16" uuid="58e39be4-ff6f-49d7-9636-94786965bc1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Brandon" size="7"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOMBREAPELLIDO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="188" y="761" width="181" height="13" uuid="3b64e0c0-da23-4771-af2d-0f515c0bbb6a"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Av. Velez Sarsfield 4839 / 41]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="749" width="184" height="12" uuid="5fa7b03f-a06d-470d-850c-453c9286dcbb"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación Puente Saavedra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="761" width="183" height="13" uuid="78178fe3-0bb4-4f08-a7d6-a67b5807b236"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Av. Maipú 130]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="749" width="181" height="12" uuid="ad449edb-be21-4ca3-983f-2c4aaa13bb57"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación Munro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="777" width="185" height="13" uuid="af0cf838-993d-41ab-b712-afd4f9b308df"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación Villa Adelina]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="789" width="185" height="12" uuid="d0e71c8d-0c75-499a-804a-bc9a8d9572d0"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Avda. Ader 4057]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="777" width="181" height="12" uuid="df82aaaa-43c5-4efb-b786-d1a5854a9300"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delegación Villa Martelli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="789" width="181" height="13" uuid="c02044b1-63e6-496b-a586-49e8eaa505f3"/>
+				<textElement>
+					<font fontName="Brandon" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Laprida 3902]]></text>
+			</staticText>
+			<image>
+				<reportElement x="85" y="187" width="384" height="55" uuid="2000bb1f-3adb-458e-a92c-d734cf3f0321"/>
+				<imageExpression><![CDATA[$P{CODIGOBARRASCOMPLETO}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="222" y="460" width="110" height="55" uuid="1340de59-2930-4258-b89d-0f7ba88d47f1"/>
+				<imageExpression><![CDATA[$P{CODIGOBARRASCORTO}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>
